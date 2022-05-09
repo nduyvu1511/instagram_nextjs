@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+    @apply w-full border border-black-10 dark:border-white-10 rounded-[3px] px-[10px] h-[40px] text-sm bg-[transparent];
+  }
+
+  .container {
+    @apply max-w-[935px] w-full mx-auto sm:pt-[20px] sm:px-[20px] lg:px-[0px];
+  }
+
+  .post-container {
+    @apply max-w-[620px] w-full mx-auto;
+  }
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #fff;
+  width: 22px !important;
+  height: 22px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 9px !important;
+  font-weight: bold;
+  color: black;
+}
+
+.swiper-button-next {
+}
+
+.swiper-button-prev {
+}
+
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
